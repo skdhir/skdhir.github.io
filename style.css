@@ -1,0 +1,143 @@
+.card {
+  transition: all 0.2s;
+}
+
+.card:hover {
+  scale: 1.1;
+}
+
+img {
+  transition: all 0.2s;
+}
+
+img:not(.img-not-scaled):hover {
+  transform: scale(1.05);
+}
+
+video {
+  transition: all 0.2s;
+}
+
+video:hover {
+  transform: scale(1.05);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  transition: all 0.2s;
+}
+.back-to-top:hover {
+  border-radius: 50%;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+
+.emphasis {
+  color: #555;
+  background-color: #eef;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/*
+.highlight {
+  color: #ff9900;
+  font-weight: bold;
+}
+.service-title {
+  color: #0056b3; 
+  font-weight: bold;
+}
+.service-description {
+  margin-bottom: 20px;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+  gap: 10px; 
+}
+.services-list li {
+  flex: 1 1 200px;
+  margin-bottom: 10px;
+}
+*/
+
+/*
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+*/
+.highlight {
+  color: #ff9900; /* Changed for better contrast with green background */
+  font-weight: bold;
+}
+.service-title {
+  color: #0056b3; /* Adjust to suit your design */
+  font-weight: bold;
+}
+.service-description {
+  margin-bottom: 20px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+.flex-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Removes default list styling */
+  /*background-color: #f5f5f5; */
+  padding: 20px; /* Adds some padding around the container */
+}
+.flex-list-item {
+  flex: 1 1 150px; /* Adjust '150px' to change the minimum column width before wrapping */
+  margin: 10px; /* Adds space between items */
+  background-color: #ffffff; /* Item background color */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow to each item */
+  padding: 10px; /* Padding inside each item */
+  box-sizing: border-box; /* Ensures padding does not affect the overall defined width */
+  text-align: center; /* Centers text inside each item */
+}
+
+.health-blog {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.health-blog h2, .health-blog h3 {
+  color: var(--primary-color);
+}
+.health-blog p {
+  color: var(--text-color);
+}
+.health-blog .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.health-blog .btn-primary:hover {
+  background-color: darken(var(--accent-color), 10%);
+  border-color: darken(var(--accent-color), 10%);
+}
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .health-blog .btn-primary {
+      margin-bottom: 20px;
+  }
+}
